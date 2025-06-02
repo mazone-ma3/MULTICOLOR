@@ -1,0 +1,12 @@
+call fmc.bat b0
+call fmc.bat b1
+call fmc.bat b2
+call fmc.bat b3
+call fmc.bat r0
+call fmc.bat r1
+call fmc.bat r2
+call fmc.bat r3
+call fmc.bat g0
+call fmc.bat g1
+call fmc.bat g2
+call fmc.bat g3

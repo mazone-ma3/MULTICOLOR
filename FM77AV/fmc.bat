@@ -1,0 +1,1 @@
+fm7conv %1.raw %1.obj
