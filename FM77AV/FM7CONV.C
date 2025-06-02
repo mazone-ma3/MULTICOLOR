@@ -1,6 +1,9 @@
 /* CMOC BIN->FM-7 (PROG_ADR-) CONV. for GCC */
 /* 先頭のスタック確保用コードをバイパスする */
 /* CMOCで無ければデータ(DATA_ADR-)として変換 */
+
+/* CMOC判別をコメントアウト */
+
 #include <stdio.h>
 
 #define PROG_ADR 0x6000
@@ -33,15 +36,15 @@ int conv(char *loadfil, char*savefil)
 	if(!(size < 1)){
 		header = DATA_ADR;
 		header2 = 0;	/* プログラムで無い場合 */
-		if((pattern[6] == 0x17)){
-			header2 = pattern[6+1]*256+pattern[6+2]+3;	//何も無ければ0x605c;
-			if(header2 < (0x8000-PROG_ADR)){
-				header = PROG_ADR;		/* プログラム(多分) */
-				header2 += (PROG_ADR+6);
-			}else{
-				header2 = 0;
-			}
-		}
+//		if((pattern[6] == 0x17)){
+//			header2 = pattern[6+1]*256+pattern[6+2]+3;	//何も無ければ0x605c;
+//			if(header2 < (0x8000-PROG_ADR)){
+//				header = PROG_ADR;		/* プログラム(多分) */
+//				header2 += (PROG_ADR+6);
+//			}else{
+//				header2 = 0;
+//			}
+//		}
 		printf("Start=%X Run=%X Size=%X",header, header2, size);
 
 		pattern2[0] = 0;
