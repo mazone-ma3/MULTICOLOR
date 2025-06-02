@@ -1,7 +1,7 @@
 # MULTICOLOR
 多色表示実験 読み物 By m@3
 
-・まずmagick等で24bitbitmapに縮小変換します。.batをつけておきます。
+・まずmagick等で24bit bitmapに縮小変換します。.batをつけておきます。
 
 画像比率は縮小前に前もって合わせておきます。
 
@@ -19,4 +19,4 @@ mmrg.cをGCC6809でコンパイルしてF-BASICからfmld.basを実行。
 
 ・PC-88VA
 
-VABMP.cをWatcom Cでコンパイルして640x200ドット65536色bitmapを直接読みます。
+VABMP.cをOpenWatcomでコンパイルして640x200ドット65536色bitmapを直接読みます。
