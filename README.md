@@ -1,22 +1,22 @@
 # MULTICOLOR
-���F�\������ �ǂݕ� By m@3
+多色表示実験 読み物 By m@3
 
-�E�܂�magick����24bit bitmap�ɏk���ϊ����܂��B.bat�����Ă����܂��B
+・まずmagick等で24bit bitmapに縮小変換します。.batをつけておきます。
 
-�摜�䗦�͏k���O�ɑO�����č��킹�Ă����܂��B
+画像比率は縮小前に前もって合わせておきます。
 
-�EX1turboZ
+・X1turboZ
 
-320x200�h�b�g4096�Fbitmap����conv24.c��raw�f�[�^�𐶐���Adiv.c�ŕ����B
+320x200ドット4096色bitmapからconv24.cでrawデータを生成後、div.cで分割。
 
-BLOADX1Z.c��z88dk�ŃR���p�C������LSX-Dodgers��Ŏ��s�B
+BLOADX1Z.cをz88dkでコンパイルして15kHzモードでLSX-Dodgers上で40文字モードにしてから実行。
 
-�EFM77AV
+・FM77AV
 
-X1turboZ�Ɠ����悤��raw�f�[�^�𕪊���������fm7conv.c�ŕϊ��B(fmv.bat�t��)
+X1turboZと同じようにrawデータを分割生成してfm7conv.cで変換。(fmv.bat付属)
 
-mmrg.c��GCC6809�ŃR���p�C������F-BASIC����fmld.bas�����s�B
+mmrg.cをGCC6809でコンパイルしてF-BASICからfmld.basを実行。
 
-�EPC-88VA
+・PC-88VA
 
-VABMP.c��OpenWatcom�ŃR���p�C������640x200�h�b�g65536�Fbitmap�𒼐ړǂ݂܂��B
+VABMP.cをOpenWatcomでコンパイルして640x200ドット65536色bitmapを直接読みます。
